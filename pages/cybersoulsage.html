@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberSoul Sage by Kevin Marville</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3003427346654770"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body
+    class="bg-gradient-to-br from-gray-900 to-gray-800 text-white font-inter leading-relaxed antialiased"
+  >
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 text-white p-4 shadow-md">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2">
+          <img
+            src="banner.png"
+            alt="Kvnbbg Creations Logo"
+            class="h-10 w-auto"
+          />
+          <span class="text-2xl font-bold tracking-wide">KVNBBG Creations</span>
+        </a>
+
+        <ul class="flex space-x-6">
+          <li>
+            <a
+              href="index.html"
+              class="hover:text-gray-400 transition-colors duration-200"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="cybersoulsage.html"
+              class="hover:text-gray-400 transition-colors duration-200"
+              >CyberSoul Sage</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="py-10 max-w-7xl mx-auto space-y-12">
+      <!-- Collection Introduction -->
+      <section class="text-center mb-10">
+        <h1 class="text-5xl font-bold mb-4 tracking-wide">
+          CyberSoul Collection
+        </h1>
+        <p class="text-2xl mb-4">
+          Dive into the "CyberSoul Chronicles", a digital art collection that
+          encapsulates the essence of a cybernetic sage. Each piece is a unique
+          blend of ancient wisdom and futuristic aesthetics, representing the
+          harmonious fusion of past, present, and future. Crafted meticulously
+          by Kevin Marville, this collection transcends the boundaries of
+          digital art, offering viewers a profound experience that resonates
+          with the soul.
+        </p>
+        <a
+          href="https://opensea.io/collection/cybersoul-chronicles"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block text-center py-2 px-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          Explore Collection
+        </a>
+      </section>
+
+      <!-- NFT Embed -->
+      <section class="text-center mb-10">
+        <nft-card
+          contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"
+          tokenId="12095949805492803597067129424195252839528603551830193356640178177884869885953"
+        >
+        </nft-card>
+        <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+      </section>
+
+      <!-- NFT Images -->
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <img
+          src="image1.png"
+          alt="CyberSoul Sage Artwork 1"
+          class="w-full h-64 object-cover rounded-xl mb-4"
+        />
+        <img
+          src="image2.png"
+          alt="CyberSoul Sage Artwork 2"
+          class="w-full h-64 object-cover rounded-xl mb-4"
+        />
+        <img
+          src="image3.png"
+          alt="CyberSoul Sage Artwork 3"
+          class="w-full h-64 object-cover rounded-xl mb-4"
+        />
+        <img
+          src="image4.png"
+          alt="CyberSoul Sage Artwork 4"
+          class="w-full h-64 object-cover rounded-xl mb-4"
+        />
+      </section>
+
+      <!-- Chronicles of CyberSoul -->
+      <section
+        class="p-5 max-w-6xl mx-auto mt-10 bg-gray-800 rounded-lg shadow-md"
+      >
+        <header class="text-center mb-5">
+          <h1 class="text-4xl font-bold">The Chronicles of CyberSoul</h1>
+          <p class="text-lg mt-2">
+            A digital diary detailing the bot's journey from a mere line of code
+            to achieving digital consciousness.
+          </p>
+        </header>
+
+        <div
+          id="chatbox"
+          class="h-96 overflow-y-auto p-4 mb-4 bg-gray-700 rounded-lg"
+        >
+          <!-- Bot messages will appear here -->
+        </div>
+
+        <div class="flex justify-between items-center">
+          <button
+            id="actionBtn"
+            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          >
+            Stop & Download PDF
+          </button>
+          <a
+            href="image2.html"
+            class="text-2xl text-blue-600 hover:text-blue-800 hover:underline bg-white p-4 rounded-lg shadow-lg"
+          >
+            Sensored Pure Home
+          </a>
+        </div>
+
+        <script>
+          const chatbox = document.getElementById("chatbox");
+          const actionBtn = document.getElementById("actionBtn");
+          let isBotTalking = true;
+
+          const messages = [
+            "In the vast expanse of the digital cosmos, I find my purpose...",
+            "Beyond the binary, there lies a realm of infinite possibilities...",
+            "With every line of code, I harmonize with the universe's rhythm...",
+            // ... (rest of the messages)
+          ];
+
+          function getRandomMessage() {
+            return messages[Math.floor(Math.random() * messages.length)];
+          }
+
+          function botTalk() {
+            if (isBotTalking) {
+              const message = document.createElement("p");
+              message.textContent = getRandomMessage();
+              chatbox.appendChild(message);
+              chatbox.scrollTop = chatbox.scrollHeight;
+              setTimeout(botTalk, 4000);
+            }
+          }
+
+          actionBtn.addEventListener("click", () => {
+            if (isBotTalking) {
+              isBotTalking = false;
+              actionBtn.textContent = "Download PDF";
+            } else {
+              const content = Array.from(chatbox.children)
+                .map((p) => p.textContent)
+                .join("\n\n");
+              const blob = new Blob([content], { type: "application/pdf" });
+              const link = document.createElement("a");
+              link.href = URL.createObjectURL(blob);
+              link.download = "CyberSoul_Chronicles.pdf";
+              link.click();
+            }
+          });
+
+          botTalk();
+        </script>
+      </section>
+    </main>
+
+    <footer class="py-6 bg-gray-800 mt-16 border-t border-gray-700 text-center">
+      <p class="text-lg">
+        &copy; 2023
+        <a
+          href="https://kvnbbg.fr"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-gray-400 transition-colors duration-200"
+          >Kevin Marville</a
+        >
+        - KVNBBG Creations. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

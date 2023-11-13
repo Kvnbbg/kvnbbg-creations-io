@@ -6,10 +6,8 @@ This file lists all individuals having contributed to the **CyberSoul Sage NFT C
 
 ## Core Contributors
 
-- **Kevin Marville** - *Initial work, Project Maintainer*
+- **Kevin Marville** - _Initial work, Project Maintainer_
 
 ## Other Contributors
 
-*(This section will list other contributors. Please add names and contributions as they come in.)*
-
-
+_(This section will list other contributors. Please add names and contributions as they come in.)_

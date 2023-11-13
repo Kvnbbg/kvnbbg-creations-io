@@ -28,11 +28,13 @@ The **CyberSoul Sage** collection is a unique blend of digital artistry and prof
 ## Installation & Setup
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/kvnbbg/cybersoulsage.git
    ```
 
 2. Navigate to the project directory:
+
    ```bash
    cd cybersoulsage
    ```
