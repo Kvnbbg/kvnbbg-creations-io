@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healing Essence by Kevin Marville</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3003427346654770"
+     crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white font-inter leading-relaxed antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="banner.png" alt="Kvnbbg Creations Logo" class="h-10 w-auto">
+                <span class="text-2xl font-bold tracking-wide">KVNBBG Creations</span>
+            </a>
+
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-400 transition-colors duration-200">Home</a></li>
+                <li><a href="cybersoulsage.html" class="hover:text-gray-400 transition-colors duration-200">CyberSoul Sage</a></li>
+                <li><a href="healing-essence.html" class="hover:text-gray-400 transition-colors duration-200">Healing Essence</a></li>
+                <li><a href="https://allmylinks.com/kvnbbg" target="_blank" rel="noopener noreferrer" class="hover:text-gray-400 transition-colors duration-200">All My Links</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="py-10 max-w-7xl mx-auto space-y-12">
+
+        <!-- Healing Essence Introduction -->
+        <section class="text-center mb-10">
+            <h1 class="text-5xl font-bold mb-4 tracking-wide">Healing Essence Collection</h1>
+            <p class="text-2xl mb-4">Immerse yourself in the "Healing Essence Chronicles", a digital art collection that embodies the spirit of rejuvenation and tranquility. Now, experience the interactive game where you can plant, nurture, and sell your own unique essence.</p>
+            <a href="https://opensea.io/collection/healing-essence-chronicles" target="_blank" rel="noopener noreferrer" class="inline-block text-center py-2 px-4 bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                Explore Collection
+            </a>
+        </section>
+
+        <!-- Interactive Game -->
+        <section class="text-center mb-10">
+            <h2 class="text-4xl font-bold mb-6 tracking-wide">Plant Your Essence</h2>
+            <div class="flex justify-center space-x-4">
+                <button id="chooseSeed" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Choose Seed</button>
+                <button id="plantSeed" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Plant</button>
+                <button id="growPlant" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Let it Grow</button>
+                <button id="sellPlant" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Sell</button>
+            </div>
+            <div class="mt-6">
+                <nft-card
+                    contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"
+                    tokenId="12095949805492803597067129424195252839528603551830193356640178178984381513729">
+                </nft-card>
+            </div>
+        </section>
+
+        <!-- Image Gallery -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <img src="imageh1.png" alt="Healing Essence Image 1" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <img src="imageh2.png" alt="Healing Essence Image 2" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <img src="imageh3.png" alt="Healing Essence Image 3" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <img src="imageh4.png" alt="Healing Essence Image 4" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <img src="imageh5.png" alt="Healing Essence Image 5" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <img src="imageh6.png" alt="Healing Essence Image 6" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        </section>
+
+        <!-- Donation Section -->
+        <section class="text-center mt-10">
+            <h2 class="text-4xl font-bold mb-6 tracking-wide">Support Kevin's Creations</h2>
+            <p class="text-2xl mb-4">If you love the art and want to support Kevin's work, consider making a donation.</p>
+            <a href="https://ko-fi.com/kvnbbg" target="_blank" rel="noopener noreferrer" class="inline-block text-center py-2 px-4 bg-gradient-to-r from-red-500 to-orange-500 text-white font-bold rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                Donate on Ko-fi
+            </a>
+        </section>
+
+        <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+        <script>
+            const chooseSeedBtn = document.getElementById('chooseSeed');
+            const plantSeedBtn = document.getElementById('plantSeed');
+            const growPlantBtn = document.getElementById('growPlant');
+            const sellPlantBtn = document.getElementById('sellPlant');
+
+            chooseSeedBtn.addEventListener('click', () => {
+                alert('You have chosen a unique seed!');
+            });
+
+            plantSeedBtn.addEventListener('click', () => {
+                alert('Your seed has been planted. Watch it grow!');
+            });
+
+            growPlantBtn.addEventListener('click', () => {
+                alert('Your plant is growing beautifully!');
+            });
+
+            sellPlantBtn.addEventListener('click', () => {
+                window.open('https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/12095949805492803597067129424195252839528603551830193356640178178984381513729', '_blank');
+            });
+        </script>
+    </main>
+
+    <footer class="py-6 bg-gray-800 mt-16 border-t border-gray-700 text-center">
+        <p class="text-lg">&copy; 2023 <a href="https://kvnbbg.fr" target="_blank" rel="noopener noreferrer" class="hover:text-gray-400 transition-colors duration-200">Kevin Marville</a> - KVNBBG Creations. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
