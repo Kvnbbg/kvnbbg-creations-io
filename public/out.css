@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Inter", sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
 }
 
@@ -54,7 +54,7 @@ html {
 body {
   margin: 0;
   /* 1 */
-  line-height: inherit;
+  line-height: 1.6;
   /* 2 */
 }
 
@@ -105,6 +105,11 @@ a {
   text-decoration: inherit;
 }
 
+a:hover {
+  text-decoration: underline;
+  line-height: 1.9;
+  scale: 1.4;
+}
 /*
 Add the correct font weight in Edge and Safari.
 */
@@ -256,6 +261,18 @@ Correct the cursor style of increment and decrement buttons in Safari.
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
+}
+
+/* 
+Customize scrollbar for Browser that support webkit as Chrome or Safari 
+*/
+::-webkit-scrollbar {
+  width: 10%;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 5%;
 }
 
 /*
@@ -1014,4 +1031,15 @@ video {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+/*
+Give interactive styling to the card
+*/
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
